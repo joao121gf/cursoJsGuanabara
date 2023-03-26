@@ -15,12 +15,23 @@
     </style>
 </head>
 <body>
-    <h1>Iniciando estudos Dom</h1>
-    <p>Aqui vai o resultado</p>
+    <h1 id="oi">Iniciando estudos Dom</h1>
+    <p name='results'>Aqui vai o resultado</p>
     <p>aprendendo a utilizar <strong>Dom</strong> em JavaScript</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     <script>
+        var body = document.body
+        var p1 = document.getElementsByTagName('p')[1]
+        p1.style.color = 'blue'
+        document.write(p1.innerHTML)
 
+        var d = document.getElementById('msg')
+        d. style.background = 'green'
+        //d.innerHTML = 'estou aguardando...'
+        var results = document.getElementsByName('results')[0]
+        results.innerHTML = 'seja muito bem vindo'
+        var h = document.querySelector('h1#oi');
+        h.style.background = 'blue'
     </script>
 </body>
-</html>
+</html> 
